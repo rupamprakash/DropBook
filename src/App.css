@@ -1,0 +1,878 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+h1,h2,h3{
+    font-family: 'a Astro Space', sans-serif;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: lighter;
+}
+
+body{
+    --background-color: #07001A;
+    --background-image: url(./images/Stars.png);
+    --button-background: transparent linear-gradient(132deg, #FF9160 0%, #BA3B7F 100%) 0% 0% no-repeat padding-box;
+}
+h1,h2{
+    font-size: 5rem;
+    color: #fff;
+    font-weight: bolder;
+    line-height: 4rem; 
+}
+
+
+/* -----------------------------------Button CSS start------------------------------------------- */
+
+.bonusbtn{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding-top: 0.3rem
+}
+.bonus_btn{
+   background: var(--button-background);
+   height: 3.3rem;
+   width: 10rem;
+   text-align: center;
+   border-radius: 8px;
+   font-size: 1.3rem;
+   color: #fff;
+   font-weight:600;
+   position:absolute;
+}
+
+.regbutton{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding-top: 4rem;
+    background-image: var(--background-image);
+    background-size: cover;
+}
+.register_btn{
+   background: var(--button-background);
+   height: 5rem;
+   width: 20rem;
+   text-align: center;
+   margin-top: 4rem;
+   border-radius: 15px;
+   font-size: 1.6rem;
+   color: #fff;
+   font-weight:600;
+}
+.regbtn_large{
+   background: var(--button-background);
+   height: 5rem;
+   width: 60rem;
+   text-align: center;
+   margin-top: 4rem;
+   border-radius: 15px;
+   font-size: 1.6rem;
+   color: #fff;
+   font-weight:600;
+}
+
+/* -----------------------------------Button CSS Ends--------------------------------------------- */
+
+
+
+
+
+
+/* -----------------------------------Herosection CSS start--------------------------------------- */
+ .hero-section{
+     background-image: url(./images/hero-img.svg);
+     background-attachment:fixed;
+     height: 100vh;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .hero-content{
+     border: solid 1px blue;
+     text-align: center;
+     padding: 50px 50px;
+     width: 60%;
+     height: 60%;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 12rem;
+     position:relative;
+ }
+
+ .hero-content p{
+    font-size: 2rem;
+    color: rgb(187, 187, 187);
+    font-weight: lighter;
+}
+.hero-content .para-2{
+    font-size: 1.2rem;
+    color: rgb(187, 187, 187);
+    font-weight: lighter;
+    padding-top: 0.8rem;
+}
+
+.rocket_image{
+    position:absolute;
+    height: 115%;
+    right: -10rem;
+    bottom:-18rem;
+    animation: takeoff 5s linear infinite;
+    animation-delay: 3s;
+}
+.hero-btn{
+    height: 4.5rem;
+    width: 20rem;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+    background: none;
+    border-radius: 30px;
+    border-color: #fff;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight:400;
+    border-width: 1.4px;
+ }
+ /* --------------------------------HeroSection Animation----------------------------------------- */
+
+.hero-content h1{
+    width: 6ch;
+    padding-top:3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    animation: typing 2.5s steps(6) infinite alternate; 
+} 
+@keyframes typing {
+    0% {
+      width: 0
+    }
+    50% {
+        width: 6ch;
+    }
+}
+@keyframes takeoff {
+    100%{
+        transform: translateY(-100rem);
+    }
+}
+      
+
+
+ /* -----------------------------------Herosection CSS end--------------------------------------- */
+
+
+
+
+ /* -----------------------------------Aboutsection CSS Starts--------------------------------------- */
+ 
+ .about-section{
+    background-color: var(--background-color);
+    background-image: var(--background-image);
+    background-size: cover;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    position: relative;
+}
+
+ .about-left-side{
+     display:flex;
+     justify-content: center;
+     flex-direction: column;
+ }
+
+.about-section p{
+    margin: 3rem 2rem 5rem 0;
+}
+
+.about-right-side{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.aboutimage{
+   height: 60%;
+}
+
+.planet_red{
+    position:absolute;
+    top: 20%;
+    left: 2%;
+    height: 13%;
+}
+
+.planet_yellow{
+    position: absolute;
+    top: 92%;
+    right: 4%;
+    height: 15%;
+}
+
+/* -----------------------------------Aboutsection CSS ends--------------------------------------- */
+
+
+
+
+/* -----------------------------------Section3 CSS starts----------------------------------------- */
+
+.section3{
+    background-color: var(--background-color);
+    background-image: var(--background-image);
+    background-size: cover;
+    padding-top: 3rem;
+}
+
+.section3-left-side{
+    display:flex;
+     justify-content: center;
+     flex-direction: column;
+}
+.section3 h2{
+    width: 160%;
+}
+
+.section3 .studying_image{
+    margin-left: 8rem;
+    margin-top: 5rem;
+    height: 60%;
+    width: 50%;
+}
+.section3-right-side{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+.card{
+    width: 40rem;
+    height: 8rem;
+    border-radius: 10px;
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    margin-top: 3rem;
+    background: #543191 0% 0% no-repeat padding-box;
+}
+.card-class{
+    margin-top: 10rem;
+}
+.card1-content{
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.planet{
+    position: relative;
+    left: -8rem;
+    top: -12rem;
+    width: 14%;
+
+ }
+
+/* -----------------------------------Section3 CSS ends--------------------------------------- */
+
+
+
+/* -----------------------------------Section4 CSS starts--------------------------------------- */
+
+.section4{
+    background-color: var(--background-color);
+    background-image: var(--background-image);
+    background-size: cover;
+    padding-bottom: 5rem;
+}
+
+.section4 h2{
+   width: 105%;
+}
+
+.section4 li{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: lighter;
+    line-height: 3.5;  
+}
+
+.takeaway_content{
+    
+    padding: 50px 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top:3rem;
+    background: #50416b 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(3px);
+    position:relative;
+}
+.takeaway_image{
+    position:absolute;
+    width: 35%;
+    right: -5rem;
+    bottom: -3.5rem;
+}
+.planetred2{
+    position:absolute;
+    height: 25%;
+    z-index: -1;
+    top: -3rem;
+    right:8rem;
+    filter:blur(0.5px)
+}
+.planetpurple{
+    height: 15%;
+    position: absolute;
+}
+
+
+
+/* -----------------------------------Section4 CSS ends----------------------------------------- */
+
+
+
+/* -----------------------------------Section5 CSS starts----------------------------------------- */
+
+.section5{
+    background-color: var(--background-color);
+    background-image: var(--background-image);
+    background-size: cover;
+    padding-bottom: 5rem;
+    padding-top:5rem; 
+    position: relative;
+}
+
+.planet-red{
+    height:10%;
+    position:absolute;
+    left: 4rem;
+    top: 20rem;
+}
+.planet_green{
+    position:absolute;
+    height: 15%;
+    right: 4rem;
+    top:-4rem;
+}
+
+.section5_mainclass{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section5 h2{
+    width: 105%;
+}
+
+.card5{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:3rem;
+
+}
+.section5_card{
+    width: 350px;
+    height: 180px
+}
+.card5_container{
+    padding-left:3rem;
+}
+.card5_text{
+    text-align: left;
+    padding-left: 3rem;
+    padding-top: 3rem;
+}
+.card5 h5{
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.card5 p{
+    padding-top: 1.2rem;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: lighter;
+    width:100%;
+}
+.img_class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card5_img{
+    height: 60%;
+    
+}
+.card5:hover{
+    transform: scale(1.01);
+}
+
+/* -----------------------------------Section5 CSS ends------------------------------------------- */
+
+
+
+
+/* -----------------------------------Section6 CSS starts------------------------------------------- */
+
+.section6{
+    background-color: var(--background-color);
+    background-image: var(--background-image);
+    background-size: cover;
+    padding-bottom: 3rem;
+    padding-top:3rem; 
+    position: relative;
+}
+
+.section6_left-side{
+    display:flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+}
+.section6_right-side{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.section6 h2{
+    width: 105%;
+}
+
+.bonus_image{
+    margin-top: 5rem;
+    padding-left: 2rem;
+}
+.card6{
+    position: relative;
+    display:flex;
+    justify-content: center;
+}
+.card6_container{
+    padding-top:16rem;
+    display:flex;
+    justify-content: flex-start;
+}
+/* -----------------------------------Section6 CSS ends--------------------------------------------- */
+
+
+
+
+/* -----------------------------------Section7 CSS starts--------------------------------------------- */
+
+.section7{
+    background-color: var(--background-color);
+    background-image: var(--background-image);
+    background-size: cover;
+    padding-bottom: 5rem;
+    padding-top:5rem; 
+    position: relative;
+}
+
+.card7{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.card7_img{
+    height: 40%;
+    width: 40%;
+    border-radius: 50%;
+    display: block;
+    margin: 2rem auto 1rem auto;
+}
+
+.card7 h5{
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight:600;
+}
+
+.card7 h6{
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight:400;
+}
+.card7 p{
+    padding: 1.2rem 2rem;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: lighter;
+    width:100%; 
+    background-color:#0d0022;
+    border-radius: 15px;
+}
+
+
+
+
+/* -----------------------------------Section7 CSS ends----------------------------------------------- */
+
+
+
+
+
+/* -----------------------------------Section8 CSS starts----------------------------------------------- */
+
+.section8{
+    background-color: var(--background-color);
+    background-image: var(--background-image);
+    background-size: cover;
+    padding-bottom: 5rem;
+    padding-top:5rem; 
+    position: relative;
+}
+.rocketbottom_img{
+    position:absolute;
+    left: -25rem;
+    height: 42%;
+    top: -2rem;
+}
+.section8_leftside{
+    padding-top: 3rem;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.section8_rightside{
+    padding-top: 3rem;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.section8 h2{
+    font-size: 4rem;
+    color: #fff;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.section8_img{
+    height: 60%;
+}
+/* -----------------------------------Section8 CSS ends----------------------------------------------- */
+
+
+
+
+/* -----------------------------------Footer CSS starts----------------------------------------------- */
+
+.footer{
+    background-color: var(--background-color);
+    background-image: var(--background-image);
+    background-size: cover;
+    padding-bottom: 2rem;
+    padding-top:3rem; 
+    text-align: center;
+}
+.footer h5{
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: lighter;
+}
+
+/* -----------------------------------Footer CSS ends------------------------------------------------- */
+
+
+
+/* -----------------------------------Desktop and Laptop media query---------------------------------- */
+
+
+/* -----------------------------------Tablet and Ipad media query------------------------------------- */
+
+@media (max-width: 1024px) and (min-width: 768px){
+    .about-section,.section3, .section4, .section5, .section6, .section7, .section8{
+        padding-top:8rem;
+    }
+    .about-left-side p{
+        text-align: justify;
+    }
+    .section3 h2{
+        width:200%;
+    }
+    .section3 p{
+        width:120%;
+    }
+    .card-class{
+        margin-top:25rem;
+    }
+    .bonus_image{
+        height:60%;
+    }
+
+}
+
+/* -----------------------------------Mobile media query---------------------------------------------- */
+@media (max-width: 600px){
+    
+    .about-section,.section3, .section4, .section5, .section6, .section7, .section8{
+        text-align:center;
+        padding-top:8rem;
+    }
+    .rocket_image{
+        height:auto;
+    }
+    .about-left-side p{
+        text-align: justify;
+        padding-left:2rem;
+        padding-right:2rem;
+    }
+    .about-right-side{
+        display:flex;
+        justify-content: center;
+    }
+    .planet_red{
+        top: 12%;
+        left: -2%;
+        height: 10%;
+    }
+    .planet_yellow{
+        top: 82%;
+        right: 3%;
+        height: 12%;
+    }
+    .section3 h2{
+        width:100%;
+    }
+    .section3 .studying_image{
+        margin-top: 5rem;
+        height: 50%;
+        width: auto;
+        margin-right:3rem;
+    }
+    .card-class{
+        margin-top:0;
+    }
+    .card1-content{
+        font-size: 1.5rem;
+    }
+    .planet{
+        left: -27.5rem;
+        top: -2rem;
+        width: 20%;
+    }
+    .section4 li{
+        line-height: 3;
+    }
+    .planetred2{
+        height: 18%;
+        z-index: -1;
+        top: -4rem;
+        right: 1rem;        
+    }
+    .takeaway_image{
+        width: 40%;
+        right: -3rem;
+        bottom: -3.5rem;
+    }
+    .planetpurple{
+        left: -1rem;
+    }
+    .section5_card{
+        height: 100%;
+    }
+    .card5_text {
+        padding-right:3rem;
+}
+.card5 h5{
+    font-size: 1.6rem;
+}
+.card5 p{
+    font-size:1.4rem;
+}
+.card5_img{
+    height:80%;
+}
+.planet-red{
+    height: 6%;
+    left: -1rem;
+    top: 20rem;
+}
+.planet_green {
+    height: 7%;
+    right: 0rem;
+    top: -5rem;
+}
+.section6_left-side{
+    justify-content: center;
+    align-items: center;
+}
+.bonus_image{
+    padding-left: 8rem;
+    
+}
+.card6_container{
+    padding-top:10rem;
+}
+.regbtn_large{
+    width:50%;
+}
+.rocketbottom_img {
+    left: -20rem;
+    height: 30%;
+    top: 1rem;
+}
+.section8_rightside{
+    padding-top:1rem;
+}
+}
+
+@media (max-width:768px) and (min-width:600px){
+    .about-section,.section3, .section4, .section5, .section6, .section7, .section8{
+        text-align:center;
+        padding-top:8rem;
+    }
+    .rocket_image{
+        height:auto;
+    }
+    .about-left-side p{
+        text-align: justify;
+        padding-left:2rem;
+        padding-right:2rem;
+    }
+    .about-right-side{
+        display:flex;
+        justify-content: center;
+    }
+    .planet_red{
+        top: 12%;
+        left: -2%;
+        height: 10%;
+    }
+    .planet_yellow{
+        top: 82%;
+        right: 3%;
+        height: 12%;
+    }
+    .section3 h2{
+        width:100%;
+    }
+    .section3 .studying_image{
+        margin-top: 5rem;
+        height: 50%;
+        width: auto;
+        margin-right:3rem;
+    }
+    .card-class{
+        margin-top:0;
+    }
+    .card1-content{
+        font-size: 1.5rem;
+    }
+    .planet{
+        left: -29rem;
+        top: -2rem;
+        width: 20%;
+    }
+    .section4 li{
+        line-height: 3;
+    }
+    .planetred2{
+        height: 18%;
+        z-index: -1;
+        top: -4rem;
+        right: 1rem;        
+    }
+    .takeaway_image{
+        width: 40%;
+        right: -3rem;
+        bottom: -3.5rem;
+    }
+    .planetpurple{
+        left: -1rem;
+    }
+    .section5_card{
+        height: 100%;
+    }
+    .card5_text {
+        padding-right:3rem;
+}
+.card5 h5{
+    font-size: 1.6rem;
+}
+.card5 p{
+    font-size:1.4rem;
+}
+.card5_img{
+    height:80%;
+}
+.planet-red{
+    height: 6%;
+    left: -1rem;
+    top: 20rem;
+}
+.planet_green {
+    height: 7%;
+    right: 0rem;
+    top: -5rem;
+}
+.section6_left-side{
+    justify-content: center;
+    align-items: center;
+}
+.bonus_image{
+    padding-left: 8rem;
+    
+}
+.card6_container{
+    padding-top:10rem;
+}
+.regbtn_large{
+    width:50%;
+}
+.rocketbottom_img {
+    left: -20rem;
+    height: 30%;
+    top: 1rem;
+}
+.section8_rightside{
+    padding-top:1rem;
+}
+    .section3 h2{
+        width:100%;
+    }
+}
+
+@media (max-width:400px){
+    .card3{
+        width: 100%;
+    }
+    .card1-content{
+        padding:5rem;
+    }
+    .planet_green{
+        right:1rem;
+    }
+    .takeaway_image{
+        right:0rem;
+    }
+    .bonus_image{
+        width:90%;
+    }
+}
